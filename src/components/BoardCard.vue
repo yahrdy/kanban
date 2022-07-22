@@ -1,7 +1,6 @@
 <template>
   <v-card @click="$emit('edit')">
     <div class="font-weight-bold">{{ card.title }}</div>
-    <div>{{ card.description }}</div>
     <v-menu offset-y left>
       <template v-slot:activator="{ on }">
         <v-btn icon small class="board-item-menu" v-on="on">
