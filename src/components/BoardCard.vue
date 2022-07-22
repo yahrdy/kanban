@@ -10,10 +10,10 @@
       </template>
       <v-list>
         <v-list-item @click="$emit('edit')">
-          <v-list-item-title>{{ $t('board.editCard') }}</v-list-item-title>
+          <v-list-item-title>Edit Card</v-list-item-title>
         </v-list-item>
         <v-list-item @click="$emit('delete')">
-          <v-list-item-title>{{ $t('board.deleteCard') }}</v-list-item-title>
+          <v-list-item-title>Delete</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-menu>
