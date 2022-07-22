@@ -129,7 +129,6 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
 import VueDraggable from 'vuedraggable'
 import BoardCard from '../components/BoardCard'
 import axios from 'axios'
@@ -176,7 +175,6 @@ export default {
     this.handleResize()
   },
   methods: {
-    ...mapMutations('kanban', ['updateOrder']),
     init() {
       axios.get('columns').then((response) => {
         this.columns = response.data.map((item, index) => {

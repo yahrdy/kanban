@@ -20,14 +20,6 @@
 </template>
 
 <script>
-/*
-|---------------------------------------------------------------------
-| Board Card Component
-|---------------------------------------------------------------------
-|
-| Display card content in kanban board
-|
-*/
 export default {
   props: {
     // Card content to display
