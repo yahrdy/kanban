@@ -3,15 +3,21 @@
     rounded
     outlined
     color="success"
-    href="http://localhost:8000/api/export"
+    :href="url"
     download
     style="position: fixed;bottom: 100px;right: 100px"
-  >Export DB</v-btn>
+  >Export DB
+  </v-btn>
 </template>
 
 <script>
 export default {
-  name: 'ExportButton'
+  name: 'ExportButton',
+  data() {
+    return {
+      url: process.env.VUE_APP_API_URL + 'export'
+    }
+  }
 }
 </script>
 
