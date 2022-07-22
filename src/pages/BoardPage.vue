@@ -56,6 +56,7 @@
 
     </div>
     <add-new-column @created="init"/>
+    <generate-token-button/>
     <export-button/>
     <v-dialog v-model="editDialog" width="600">
       <v-card>
@@ -134,9 +135,11 @@ import BoardCard from '../components/BoardCard'
 import axios from 'axios'
 import AddNewColumn from '@/components/AddNewColumn'
 import ExportButton from '@/components/ExportButton'
+import GenerateTokenButton from '@/components/GenerateTokenButton'
 
 export default {
   components: {
+    GenerateTokenButton,
     ExportButton,
     AddNewColumn,
     VueDraggable,
